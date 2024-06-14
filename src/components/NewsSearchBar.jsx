@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const NewsSearchBar = ({ setSearchQuery }) => {
   return (
     <div className="search-bar">
