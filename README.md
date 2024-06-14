@@ -54,10 +54,10 @@ https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY&pageSize=20
 Replace YOUR_API_KEY with your actual API key from NewsAPI.
 
 ## Code Structure
-**src/components: Contains the React components**
-**Header.jsx: Header component with the banner**
-**NewsSearchBar.jsx: Search bar component**
-**NewsList.jsx: Component to list news articles**
-**NewsItem.jsx: Component for individual news articles**
-**NewsDetail.jsx: Component for displaying detailed news (if applicable)**
-**src/assets: Contains static assets like images**
+1. src/components: Contains the React components
+2. Header.jsx: Header component with the banner
+3. NewsSearchBar.jsx: Search bar component
+4. NewsList.jsx: Component to list news articles
+5. NewsItem.jsx: Component for individual news articles
+6. NewsDetail.jsx: Component for displaying detailed news (if applicable)
+7. src/assets: Contains static assets like images
