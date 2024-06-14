@@ -3,7 +3,7 @@ import NewsItem from './NewsItem';
 
 const NewsList = ({ news }) => {
   const topNews = news.slice(0, 2);
-  const remainingNews = news.slice(2, 20); // Ensure we only show up to 20 articles total
+  const remainingNews = news.slice(2, 20); 
 
   return (
     <div>
