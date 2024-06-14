@@ -9,13 +9,15 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=7ead49c10e4d4bcca3ead8a2695128d9&pageSize=20')
-      .then(response => response.json())
-      .then(data => {
-        const newsWithImages = data.articles.filter(article => article.urlToImage);
-        setNews(newsWithImages);
-        setFilteredNews(newsWithImages);
-      });
+    const fetchNews = async () => {
+      const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=7ead49c10e4d4bcca3ead8a2695128d9&pageSize=20');
+      const data = await response.json();
+      const newsWithImages = data.articles.filter(article => article.urlToImage);
+      setNews(newsWithImages);
+      setFilteredNews(newsWithImages);
+    };
+
+    fetchNews();
   }, []);
 
   useEffect(() => {
